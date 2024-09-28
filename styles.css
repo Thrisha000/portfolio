@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Playwrite NG Modern", cursive;
+    width: auto;
+ }
+ #container{
+    width: 100%;
+    height: 100vh;
+    position: relative;/* placed in its normal position */
+ }
+
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none;/* remove the styling of list items */
+    display: inline;
+    margin: 10px 20px;
+}
+#navbar{
+    display:flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+li:hover{
+    color: rgb(250, 144, 14);
+}
+li a{
+    text-decoration: none;/* remove underline */
+    color: black;
+}
+#ih{
+    margin-left: 150px;
+    margin-top: -450px;
+    font-size: 50px;
+}
+#he{
+    margin-left: 150px;
+    margin-top: 20px;
+
+}
+#btn{
+    margin-left: 250px;
+    width: 155px;
+    height: 44px;
+    background-color: black;
+    border-radius: 8px;
+    border-color: white;
+    color: white;
+}
+#image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+.imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+
+}
+#image:hover #shape{
+    bottom: 70px;
+}
+#image:hover #girl{
+    left: 40%;
+}
+
+h3{
+    color: greenyellow;
+}
+
+#about{
+    margin-top: 18%;
+    margin-left: 8%;
+}
+
+#heading{
+    text-align: center;
+}
+
+#heading h2{
+    font-size: 30px;
+}
+
+#heading p{
+    font-size: 20px;
+    color: greenyellow;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#content_img{
+    width: 80%;
+}
+
+#content_details{
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+}
+#information{
+    margin-top: 2rem;
+}
+
+#info{
+     margin-top: 1rem;   
+}
+
+#info span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin-top:33%;
+    margin-left: 8%;
+    font-size: 15px;
+}
+#heading2{
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+}
+#heading2 p{
+    font-size: 20px;
+    color: greenyellow;
+}
+#skill{
+    margin-top: 8% 8% 0 8%;
+}
+
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+#skill_img{
+    margin-left: 700px;
+    margin-top: -300px;
+    height: 10%;
+    width: 20px;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    
+}
+.bar{
+    width: 90%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.bar_container span{
+    font-weight: 200;
+    font-size: 18px;
+}
+.bar_container h4{
+    font-size: 18px;
+    font-weight: 200;
+}
+#html_bar{
+    width: 70%;
+    background-color: orange;
+}
+#css_bar{
+    width: 75%;
+    background-color: orange;
+}
+#js_bar{
+    width: 60%;
+    background-color: orange;
+}
+#react_bar{
+    width: 50%;
+    background-color: orange;
+}
+
+#heading3{
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+}
+
+#skill{
+    margin-top:10%;
+    margin-left: 8%;
+    font-size: 20px;
+}
+
+#heading2 p{
+    font-size: 20px;
+    color: greenyellow;
+}
+#contact{
+    margin-top: 10%;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 80px;
+}
+.icon{
+    width: 5%;
+    height: 50%;
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.icon i{
+    color: black;
+    animation: shake 0.75s;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgb(255, 85, 0));
+    animation: shake 0.75s;
+}
+.icon:hover i{
+    color: white;
+}
+@keyframes shake{
+    10%{
+       transform: rotate(15deg);
+    }
+    20%{
+       transform: rotate(-15deg);
+    }
+    30%{
+       transform: rotate(15deg);
+    }
+    40%{
+       transform: rotate(-15deg);
+    }
+
+}
+
+footer{
+    padding: 2.5rem 0px;
+}
+footer p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -70px;
+
+}
+.up-arrow{
+    width: 5%;
+    height: 10%;
+    margin: 0px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right,yellow,red);
+    float: right;
+    margin: 13px 50px 50px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
